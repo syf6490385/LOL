@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/activity_news_topview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:scaleType="center"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/newstitile_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_news_bottomview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/activity_news_topview"
+         >
+        <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:text="联盟讯息"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ListView
+            android:id="@+id/activity_news_listview"
+            android:layout_width="fill_parent"
+            android:cacheColorHint="#554411"
+             android:layout_below="@+id/textView1"
+            android:layout_height="fill_parent" >
+
+        </ListView>
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>
